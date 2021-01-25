@@ -1,0 +1,222 @@
+body {
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif ;
+    background-color:rgb(201, 13, 13);
+}
+header{
+    background-color: red;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header__img {
+    width: 125px;
+    margin-top: 45px;
+    margin-left: 10px;
+}
+.header__menu {
+    margin-right: 30px;
+}
+.header__menu--profile {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.header__menu--profile img{
+    margin-right: 8px;
+    width: 40px;
+}
+.header__menu--profile p{
+    margin: 0px;
+    color: white;
+}
+.header__menu ul {
+   display: none;
+   list-style: none;
+   padding: 0px;
+   position: absolute;
+   width: 100px;
+   text-align: right;
+   margin: 0px 0px 0px -14px;
+   background-color: white;
+   width: 140px;
+   border-radius: 30px;
+}
+.header__menu:hover ul, ul:hover {
+   display:block;
+}
+
+.header__menu li{
+   margin: 10px 0px;
+   transition: 450ms all;
+   transform: rotate3d(100px, 0, 0);
+
+}
+.header__menu li a {
+   color: black ;
+   text-decoration: none;
+   margin-right: 40px;
+   
+  
+}
+.header__menu li a:hover{
+   text-decoration: underline;
+
+}
+.buscador {
+    background:linear-gradient(red , rgb(201, 13, 13) ) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.buscador__titulo {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.buscador__input {
+    width: 70%;
+    height: 35px;
+    border-radius: 40px;
+    background-color: rgb(white);
+    border: 2px solid white;
+    font-size: 15px;
+    outline: none;
+
+}
+
+::placeholder{
+    color:black;
+    font-size: 12px;
+}
+
+.carousel__titulo{
+    color: white;
+}
+
+
+body{
+    margin: 0px;
+}
+.carousel {
+     width: 100%;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+  }
+  .carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+    transition: 450ms -webkit-transform;
+     transition: 450ms transform;
+     transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
+ 
+  }
+  .carousel-item {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+          transform-origin: center left;
+  }
+  .carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+  }
+  .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  .carousel__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  .carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+ }
+  .carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }
+  .carousel-item:hover .carousel-item__details {
+    opacity: 1;
+  }
+  
+  .carousel-item__details--title {
+    color: white;
+    margin-top:180px;
+    font-size: 20px;
+  }
+  
+  .audio{
+      border-radius: 25px;
+      width: 100%;
+      margin-top: 180px;
+      outline: none;
+      height: 25px;
+      
+
+  }
+  .footer {
+    align-items: center;
+    background: linear-gradient(rgb(201, 13, 13), rgb(124, 9, 9));
+    display: flex;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .input {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 0px 20px;
+    width: 70%;
+  }
+  
+  ::placeholder {
+    color: white;
+  }
+  
+  
+   
