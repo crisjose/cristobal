@@ -1,10 +1,10 @@
 body {
     margin: 0px;
     font-family:Arial, Helvetica, sans-serif ;
-    background-color:rgb(34, 196, 218);
+    background:linear-gradient(rgb(34, 196, 218) , rgb(34, 196, 218)) ;
 }
 header{
-    background-color:rgb(120, 238, 253);
+    background-color:rgb(34, 196, 218);
     width: 100%;
     height: 80px;
     display: flex;
@@ -13,8 +13,8 @@ header{
     
 }
 .header__img {
-    width: 125px;
-    margin-top: 45px;
+    width: 85px;
+    margin-top: 0px;
     margin-left: 10px;
 }
 .header__menu {
@@ -42,7 +42,6 @@ header{
    width: 100px;
    text-align: right;
    margin: 0px 0px 0px -14px;
-   background-color: white;
    width: 140px;
    border-radius: 30px;
 }
@@ -54,12 +53,14 @@ header{
    margin: 10px 0px;
    transition: 450ms all;
    transform: rotate3d(100px, 0, 0);
+  
 
 }
 .header__menu li a {
-   color: black ;
+   color: rgb(255, 255, 255) ;
    text-decoration: none;
    margin-right: 40px;
+   
    
   
 }
@@ -68,7 +69,7 @@ header{
 
 }
 .buscador {
-    background:linear-gradient(rgb(120, 238, 253) , rgb(34, 196, 218) ) ;
+    background:linear-gradient(rgb(34, 196, 218) , rgb(34, 196, 218) ) ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +77,7 @@ header{
     
 }
 .buscador__titulo {
+  margin-top: 50px;
     color: white;
     font-family:Arial, Helvetica, sans-serif ;
 }
@@ -83,7 +85,7 @@ header{
     width: 70%;
     height: 35px;
     border-radius: 40px;
-    background-color: rgb(white);
+    background-color: transparent;
     border: 2px solid white;
     font-size: 15px;
     outline: none;
@@ -91,8 +93,8 @@ header{
 }
 
 ::placeholder{
-    color:black;
-    font-size: 12px;
+  color:white;
+  font-size: 12px;
 }
 
 .carousel__titulo{
@@ -104,12 +106,14 @@ body{
     margin: 0px;
 }
 .carousel {
-     width: 100%;
+    width: 100%;
     overflow: scroll;
     padding: 30px;
     position: relative;
+    background:linear-gradient(rgb(34, 196, 218) , rgb(34, 196, 218) ) ;
   }
   .carousel__container {
+    background:linear-gradient(rgb(34, 196, 218) , rgb(34, 196, 218) ) ;
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
@@ -170,7 +174,7 @@ body{
     margin-top:180px;
     font-size: 20px;
   }
-  
+
   .audio{
       border-radius: 25px;
       width: 100%;
@@ -186,6 +190,7 @@ body{
     display: flex;
     height: 100px;
     width: 100%;
+    margin-bottom: auto;
   }
   
   .footer a {
