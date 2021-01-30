@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Register</title>
+        <title>Password Recover</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/loginstyles.css">
@@ -17,28 +17,23 @@
         <header class="header">
             <img class="header__img" src="img/Play music logo.png" alt="PlayMusic">
             
+            
         </header>
        
 
        <section class="login">
 
         <section class="login__container">
-            <h2>Register</h2>
-            <form class="login__container--form">
-                <input class="input" type="text" placeholder="Enter your mail..."required>
-                <input class="input" type="password" placeholder="Enter your password..." required>
-                <input class="input" type="password" placeholder="Repeat your password..." required> 
-                <button class="boton">Register</button>
+            <h2>Recover Password</h2>
+            <form class="login__container--form" method="GET">
+                <input class="input"  name="mail" type="text" placeholder="Enter your email..." required> 
+                <button class="boton">Send Code to mail</button>
                 <div class="login__container--remember">
-                    <label >
-                        <input type="checkbox"  id="cbox1" value="checkbox" required> I accept terms?
-                    </label>
                    
                 </div>
-                
             </form>
-            
-            <p class="login__container--register">You have a account? <a href="login.html">Login</a></p>
+ 
+            <p class="login__container--register">You Not have a account? <a href="register.html">Register</a></p>
             </section>
         </section>
 
@@ -47,9 +42,6 @@
             <a href="">Contact Us</a>
             <a href="">About Us</a>
         </footer>
-
-        <script src="js.js"></script>
-
     </body>
    
 </html>
